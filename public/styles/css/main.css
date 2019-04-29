@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Barlow', sans-serif;
+}
+
+.header-div {
+  width: auto;
+  margin: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.top-nav {
+  overflow: hidden;
+  background: transparent;
+}
+
+.nav-projects {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.home-section {
+  max-width: 100%;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00356b;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+.home-div {
+  height: auto;
+  width: 60%;
+  text-align: center;
+  z-index: 100;
+  background: transparent;
+}
+
+.home-heading {
+  font-size: 50px;
+  margin-bottom: 8%;
+  font-weight: 800;
+}
+
+.home-avatar {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 5%;
+}
+
+.home-div p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contact-div {
+  position: fixed;
+  bottom: 25px;
+  left: 15px;
+  height: 150px;
+  width: 40px;
+  text-align: center;
+}
+
+.contact-div a {
+  display: inline-block;
+}
+
+.contact-div a i {
+  color: #333;
+  margin-top: 7px;
+  transition: all 0.35s ease;
+}
+
+.skills-section {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #0091ea;
+}
+
+.skills-heading {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 38px;
+  text-decoration: underline;
+}
+
+.skills-div-one {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.icon-div {
+  margin: 25px;
+}
+
+.projects-section {
+  width: 100%;
+  height: 405px;
+}
+
+.projects-heading {
+  text-align: center;
+  font-size: 42px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.projects-div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.project-containers {
+  width: 175px;
+  height: 175px;
+  margin: 15px;
+  position: relative;
+}
+
+.projects-div a {
+  width: 175px;
+  height: 175px;
+  display: block;
+  border: 2px solid #cecece;
+  border-radius: 10px;
+  transition: transform 0.35s ease;
+}
+
+.dare-img {
+  background-image: url(../../images/dare-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.espada-img {
+  background-image: url(../../images/espada-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.peewee-img {
+  background-image: url(../../images/peewee2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.footer-icon {
+  color: #000;
+  margin: 10px;
+}
+
+/*Hover affects */
+@media (any-hover) {
+  a span:before,
+  span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 60%;
+    margin-top: -0.5px;
+    background: #fff;
+  }
+
+  a span:before {
+    left: -2.2px;
+  }
+  a span:after {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  a span:hover:before {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  a span:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+
+  .contact-icon-one:hover {
+    font-size: 2.5em;
+  }
+
+  .contact-icon-two:hover {
+    font-size: 2.5em;
+  }
+
+  .contact-icon-three:hover {
+    font-size: 2.5em;
+  }
+
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  .skill-icon:hover {
+    -webkit-animation: spin 0.4s linear 1;
+    -moz-animation: spin 0.4s linear 1;
+    animation: spin 0.4s linear 1;
+  }
+
+  .projects-div a:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .nav-name {
+    font-size: 20px;
+  }
+
+  .nav-projects {
+    font-size: 16px;
+  }
+
+  .nav-span:hover {
+    transition: none;
+  }
+
+  .home-div {
+    width: 75%;
+    margin-bottom: 75px;
+  }
+
+  .home-heading {
+    font-size: 30px;
+  }
+
+  .home-avatar {
+    width: 150px;
+  }
+
+  .home-div p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .skill-icon {
+    font-size: 3em !important;
+  }
+
+  .projects-section {
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .projects-heading {
+    font-size: 25px;
+  }
+
+  .projects-div {
+    flex-direction: column;
+  }
+
+  .project-containers {
+    width: 150px;
+    height: 150px;
+  }
+
+  .projects-div a {
+    width: 150px;
+    height: 150px;
+  }
+
+  footer {
+    padding: 5px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+/* iPhone XS Max, XR ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}

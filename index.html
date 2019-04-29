@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Brandon Brown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="public/styles/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="public/images/favicon-32x32.png" />
+  </head>
+  <body>
+    <section class="home-section">
+      <div id="particles-js"></div>
+      <div class="header-div">
+        <div class="top-nav">
+          <a class="nav-projects" href="#projects"><span class="nav-span">See Projects</span></a>
+        </div>
+      </div>
+      <div class="home-div">
+        <h1 class="home-heading">Front-End Web Developer</h1>
+        <img class="home-avatar" src="public/images/avatar.JPG" />
+        <p>
+          Hello! My name is Brandon Brown, and I'm a Front-End Web Developer based in Dallas. I love creating beautiful and exciting web
+          applications. I'm always looking for the next challenge and keeping up with the latest programming languages. I have a diverse set of
+          skills, ranging from HTML + CSS + Javascript + SCSS + REACT + Node.js + Wordpress.
+        </p>
+      </div>
+      <div class="contact-div">
+        <a href="mailto:hello@brandonbrowndev.com"><i class="far fa-paper-plane fa-2x contact-icon-one"></i></a>
+        <a href="https://www.linkedin.com/in/brandonbrowndev09/"><i class="fab fa-linkedin-in fa-2x contact-icon-two"></i></a>
+        <a href="https://github.com/brandondev09"><i class="fab fa-github fa-2x contact-icon-three"></i></a>
+      </div>
+    </section>
+    <section class="skills-section">
+      <!-- <h2 class="skills-heading">Skills</h2> -->
+      <div class="skills-div-one">
+        <div class="icon-div"><i class="fab fa-html5 fa-5x skill-icon"></i></div>
+        <div class="icon-div"><i class="fab fa-css3-alt fa-5x skill-icon"></i></div>
+        <div class="icon-div"><i class="fab fa-js-square fa-5x skill-icon"></i></div>
+        <div class="icon-div"><i class="fab fa-sass fa-5x skill-icon"></i></div>
+        <div class="icon-div"><i class="fab fa-react fa-5x skill-icon"></i></div>
+        <div class="icon-div"><i class="fab fa-node-js fa-5x skill-icon"></i></div>
+        <div class="icon-div"><i class="fab fa-wordpress-simple fa-5x skill-icon"></i></div>
+        <div class="icon-div"><i class="fab fa-adobe fa-5x skill-icon"></i></div>
+      </div>
+    </section>
+    <section id="projects" class="projects-section">
+      <h2 class="projects-heading">Skills & Projects</h2>
+      <div class="projects-div">
+        <div class="project-containers"><a class="dare-img" href="https://darecreative.agency/"></a></div>
+        <div class="project-containers"><a class="espada-img" href="https://www.espada-art.com"></a></div>
+        <div class="project-containers"><a class="peewee-img" href="https://peeweefrisco.com/"></a></div>
+      </div>
+    </section>
+    <footer>
+      <a href="mailto:hello@brandonbrowndev.com"><i class="fas fa-envelope fa-lg footer-icon"></i></a>
+      <a href="https://www.linkedin.com/in/brandonbrowndev09/"><i class="fab fa-linkedin fa-lg footer-icon"></i></a>
+      <a href="https://github.com/brandondev09"><i class="fab fa-github-square fa-lg footer-icon"></i></a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="public/javascript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */ particlesJS.load(
+        'particles-js',
+        'public/json/particlesjs-config.json',
+        function() {
+          console.log('callback - particles.js config loaded');
+        },
+      );
+    </script>
+  </body>
+</html>
